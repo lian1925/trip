@@ -71,7 +71,7 @@
 <link href="/css/main.css?v=5.1.0" rel="stylesheet" type="text/css" />
 
 
-  <meta name="keywords" content="Hexo, NexT" />
+  <meta name="keywords" content="JavaScript,数组," />
 
 
 
@@ -87,16 +87,16 @@
 
 
 
-<meta name="description" content="sort默认参考Unicode 排序默认操作123456789101112var fruit = [&apos;cherries&apos;, &apos;apples&apos;, &apos;bananas&apos;];fruit.sort(); // [&apos;apples&apos;, &apos;bananas&apos;, &apos;cherries&apos;]var scores = [1, 10, 21, 2]; scores.sort(); // [1, 10, 2, 21]// Not">
+<meta name="description" content="sort默认参考Unicode 排序">
 <meta property="og:type" content="article">
 <meta property="og:title" content="数组|sort">
 <meta property="og:url" content="http://blog.liangyl.com/2017/02/23/js-array-sort/index.html">
 <meta property="og:site_name" content="研发笔记">
-<meta property="og:description" content="sort默认参考Unicode 排序默认操作123456789101112var fruit = [&apos;cherries&apos;, &apos;apples&apos;, &apos;bananas&apos;];fruit.sort(); // [&apos;apples&apos;, &apos;bananas&apos;, &apos;cherries&apos;]var scores = [1, 10, 21, 2]; scores.sort(); // [1, 10, 2, 21]// Not">
-<meta property="og:updated_time" content="2017-02-23T09:37:17.000Z">
+<meta property="og:description" content="sort默认参考Unicode 排序">
+<meta property="og:updated_time" content="2017-03-09T04:11:26.000Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="数组|sort">
-<meta name="twitter:description" content="sort默认参考Unicode 排序默认操作123456789101112var fruit = [&apos;cherries&apos;, &apos;apples&apos;, &apos;bananas&apos;];fruit.sort(); // [&apos;apples&apos;, &apos;bananas&apos;, &apos;cherries&apos;]var scores = [1, 10, 21, 2]; scores.sort(); // [1, 10, 2, 21]// Not">
+<meta name="twitter:description" content="sort默认参考Unicode 排序">
 
 
 
@@ -321,7 +321,9 @@
       
 
       
-        <p>sort默认参考Unicode 排序<br>默认操作<br><figure class="highlight js"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div></pre></td><td class="code"><pre><div class="line"><span class="keyword">var</span> fruit = [<span class="string">'cherries'</span>, <span class="string">'apples'</span>, <span class="string">'bananas'</span>];</div><div class="line">fruit.sort(); <span class="comment">// ['apples', 'bananas', 'cherries']</span></div><div class="line"></div><div class="line"><span class="keyword">var</span> scores = [<span class="number">1</span>, <span class="number">10</span>, <span class="number">21</span>, <span class="number">2</span>]; </div><div class="line">scores.sort(); <span class="comment">// [1, 10, 2, 21]</span></div><div class="line"><span class="comment">// Note that 10 comes before 2,</span></div><div class="line"><span class="comment">// because '10' comes before '2' in Unicode code point order.</span></div><div class="line"></div><div class="line"><span class="keyword">var</span> things = [<span class="string">'word'</span>, <span class="string">'Word'</span>, <span class="string">'1 Word'</span>, <span class="string">'2 Words'</span>];</div><div class="line">things.sort(); <span class="comment">// ['1 Word', '2 Words', 'Word', 'word']</span></div><div class="line"><span class="comment">// In Unicode, numbers come before upper case letters,</span></div><div class="line"><span class="comment">// which come before lower case letters.</span></div></pre></td></tr></table></figure></p>
+        <p>sort默认参考Unicode 排序</p>
+<a id="more"></a>
+<p>默认操作<br><figure class="highlight js"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div></pre></td><td class="code"><pre><div class="line"><span class="keyword">var</span> fruit = [<span class="string">'cherries'</span>, <span class="string">'apples'</span>, <span class="string">'bananas'</span>];</div><div class="line">fruit.sort(); <span class="comment">// ['apples', 'bananas', 'cherries']</span></div><div class="line"></div><div class="line"><span class="keyword">var</span> scores = [<span class="number">1</span>, <span class="number">10</span>, <span class="number">21</span>, <span class="number">2</span>]; </div><div class="line">scores.sort(); <span class="comment">// [1, 10, 2, 21]</span></div><div class="line"><span class="comment">// Note that 10 comes before 2,</span></div><div class="line"><span class="comment">// because '10' comes before '2' in Unicode code point order.</span></div><div class="line"></div><div class="line"><span class="keyword">var</span> things = [<span class="string">'word'</span>, <span class="string">'Word'</span>, <span class="string">'1 Word'</span>, <span class="string">'2 Words'</span>];</div><div class="line">things.sort(); <span class="comment">// ['1 Word', '2 Words', 'Word', 'word']</span></div><div class="line"><span class="comment">// In Unicode, numbers come before upper case letters,</span></div><div class="line"><span class="comment">// which come before lower case letters.</span></div></pre></td></tr></table></figure></p>
 <p>数字排序<br><figure class="highlight js"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div></pre></td><td class="code"><pre><div class="line"><span class="keyword">var</span> numbers = [<span class="number">4</span>, <span class="number">2</span>, <span class="number">5</span>, <span class="number">1</span>, <span class="number">3</span>];</div><div class="line">numbers.sort(<span class="function"><span class="keyword">function</span>(<span class="params">a, b</span>) </span>&#123;</div><div class="line">  <span class="keyword">return</span> a - b;</div><div class="line">&#125;);</div><div class="line"><span class="built_in">console</span>.log(numbers);</div><div class="line"></div><div class="line"><span class="comment">// [1, 2, 3, 4, 5]</span></div></pre></td></tr></table></figure></p>
 <p>字符串排序<br><figure class="highlight js"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div><div class="line">14</div><div class="line">15</div><div class="line">16</div><div class="line">17</div><div class="line">18</div><div class="line">19</div><div class="line">20</div><div class="line">21</div><div class="line">22</div><div class="line">23</div><div class="line">24</div><div class="line">25</div><div class="line">26</div><div class="line">27</div><div class="line">28</div></pre></td><td class="code"><pre><div class="line"><span class="keyword">var</span> items = [</div><div class="line">  &#123; <span class="attr">name</span>: <span class="string">'Edward'</span>, <span class="attr">value</span>: <span class="number">21</span> &#125;,</div><div class="line">  &#123; <span class="attr">name</span>: <span class="string">'Sharpe'</span>, <span class="attr">value</span>: <span class="number">37</span> &#125;,</div><div class="line">  &#123; <span class="attr">name</span>: <span class="string">'And'</span>, <span class="attr">value</span>: <span class="number">45</span> &#125;,</div><div class="line">  &#123; <span class="attr">name</span>: <span class="string">'The'</span>, <span class="attr">value</span>: <span class="number">-12</span> &#125;,</div><div class="line">  &#123; <span class="attr">name</span>: <span class="string">'Magnetic'</span>, <span class="attr">value</span>: <span class="number">13</span> &#125;,</div><div class="line">  &#123; <span class="attr">name</span>: <span class="string">'Zeros'</span>, <span class="attr">value</span>: <span class="number">37</span> &#125;</div><div class="line">];</div><div class="line"></div><div class="line"><span class="comment">// sort by value</span></div><div class="line">items.sort(<span class="function"><span class="keyword">function</span> (<span class="params">a, b</span>) </span>&#123;</div><div class="line">  <span class="keyword">return</span> a.value - b.value;</div><div class="line">&#125;);</div><div class="line"></div><div class="line"><span class="comment">// sort by name</span></div><div class="line">items.sort(<span class="function"><span class="keyword">function</span>(<span class="params">a, b</span>) </span>&#123;</div><div class="line">  <span class="keyword">var</span> nameA = a.name.toUpperCase(); <span class="comment">// ignore upper and lowercase</span></div><div class="line">  <span class="keyword">var</span> nameB = b.name.toUpperCase(); <span class="comment">// ignore upper and lowercase</span></div><div class="line">  <span class="keyword">if</span> (nameA &lt; nameB) &#123;</div><div class="line">    <span class="keyword">return</span> <span class="number">-1</span>;</div><div class="line">  &#125;</div><div class="line">  <span class="keyword">if</span> (nameA &gt; nameB) &#123;</div><div class="line">    <span class="keyword">return</span> <span class="number">1</span>;</div><div class="line">  &#125;</div><div class="line"></div><div class="line">  <span class="comment">// names must be equal</span></div><div class="line">  <span class="keyword">return</span> <span class="number">0</span>;</div><div class="line">&#125;);</div></pre></td></tr></table></figure></p>
 <p>参考：<a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/sort" target="_blank" rel="external">https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/sort</a></p>
@@ -364,6 +366,14 @@
 
 
     <footer class="post-footer">
+      
+        <div class="post-tags">
+          
+            <a href="/tags/JavaScript/" rel="tag"># JavaScript</a>
+          
+            <a href="/tags/数组/" rel="tag"># 数组</a>
+          
+        </div>
       
 
       
