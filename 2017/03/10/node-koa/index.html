@@ -87,19 +87,16 @@
 
 
 
-<meta name="description" content="Koa,致力于成为一个更简洁、更富有表现力、更健壮的 Web 框架。使用 koa 编写 web 应用时，我们通过组合不同的 generator，可以免除重复繁琐的回调函数嵌套，并极大地提升错误处理的效率。
-安装Koa 需要nodejs V7.6.0 或更高版本，以更好地支持 ES2015 和 async 的新特性。123$ nvm install 7$ npm i koa$ node my-koa">
+<meta name="description" content="Koa,致力于成为一个更简洁、更富有表现力、更健壮的 Web 框架。使用 koa 编写 web 应用时，我们通过组合不同的 generator，可以免除重复繁琐的回调函数嵌套，并极大地提升错误处理的效率。">
 <meta property="og:type" content="article">
 <meta property="og:title" content="Koajs 基础">
 <meta property="og:url" content="http://tech.liangyl.com/2017/03/10/node-koa/index.html">
 <meta property="og:site_name" content="研发笔记">
-<meta property="og:description" content="Koa,致力于成为一个更简洁、更富有表现力、更健壮的 Web 框架。使用 koa 编写 web 应用时，我们通过组合不同的 generator，可以免除重复繁琐的回调函数嵌套，并极大地提升错误处理的效率。
-安装Koa 需要nodejs V7.6.0 或更高版本，以更好地支持 ES2015 和 async 的新特性。123$ nvm install 7$ npm i koa$ node my-koa">
-<meta property="og:updated_time" content="2017-03-10T12:45:01.000Z">
+<meta property="og:description" content="Koa,致力于成为一个更简洁、更富有表现力、更健壮的 Web 框架。使用 koa 编写 web 应用时，我们通过组合不同的 generator，可以免除重复繁琐的回调函数嵌套，并极大地提升错误处理的效率。">
+<meta property="og:updated_time" content="2017-03-10T13:40:24.000Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="Koajs 基础">
-<meta name="twitter:description" content="Koa,致力于成为一个更简洁、更富有表现力、更健壮的 Web 框架。使用 koa 编写 web 应用时，我们通过组合不同的 generator，可以免除重复繁琐的回调函数嵌套，并极大地提升错误处理的效率。
-安装Koa 需要nodejs V7.6.0 或更高版本，以更好地支持 ES2015 和 async 的新特性。123$ nvm install 7$ npm i koa$ node my-koa">
+<meta name="twitter:description" content="Koa,致力于成为一个更简洁、更富有表现力、更健壮的 Web 框架。使用 koa 编写 web 应用时，我们通过组合不同的 generator，可以免除重复繁琐的回调函数嵌套，并极大地提升错误处理的效率。">
 
 
 
@@ -324,7 +321,7 @@
       
 
       
-        <p>Koa,致力于成为一个更简洁、更富有表现力、更健壮的 Web 框架。使用 koa 编写 web 应用时，我们通过组合不同的 generator，可以免除重复繁琐的回调函数嵌套，并极大地提升错误处理的效率。</p>
+        <p>Koa,致力于成为一个更简洁、更富有表现力、更健壮的 Web 框架。使用 koa 编写 web 应用时，我们通过组合不同的 generator，可以免除重复繁琐的回调函数嵌套，并极大地提升错误处理的效率。<br><a id="more"></a></p>
 <h2 id="安装"><a href="#安装" class="headerlink" title="安装"></a>安装</h2><p>Koa 需要nodejs V7.6.0 或更高版本，以更好地支持 ES2015 和 async 的新特性。<br><figure class="highlight js"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div></pre></td><td class="code"><pre><div class="line">$ nvm install <span class="number">7</span></div><div class="line">$ npm i koa</div><div class="line">$ node my-koa-app.js</div></pre></td></tr></table></figure></p>
 <p>若是您当前的nodejs<7.6,但是依然希望用到koa的async特性，那么可以使用babel进行转译。 <figure="" class="highlight js"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div></pre></td><td class="code"><pre><div class="line"><span class="built_in">require</span>(<span class="string">'babel-core/register'</span>);</div><div class="line"><span class="comment">// require the rest of the app that needs to be transpiled after the hook</span></div><div class="line"><span class="keyword">const</span> app = <span class="built_in">require</span>(<span class="string">'./app'</span>);</div></pre></td></tr></table></7.6,但是依然希望用到koa的async特性，那么可以使用babel进行转译。></p>
 <p>你还需要安装 transform-async-to-generator 或 transform-async-to-module-method<br>在项目的根目录，创建一个文件，命名为.babelrc<br><figure class="highlight js"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div></pre></td><td class="code"><pre><div class="line">&#123;</div><div class="line">  <span class="string">"plugins"</span>: [<span class="string">"transform-async-to-generator"</span>]</div><div class="line">&#125;</div></pre></td></tr></table></figure></p>
@@ -366,6 +363,7 @@
 <p>如果想要修改默认的 [302] 状态，直接在重定向之前或者之后执行即可。如果要修改 body，需要在重定向之前执行。<br><figure class="highlight js"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div></pre></td><td class="code"><pre><div class="line">ctx.status = <span class="number">301</span>;</div><div class="line">ctx.redirect(<span class="string">'/cart'</span>);</div><div class="line">ctx.body = <span class="string">'Redirecting to shopping cart'</span>;</div></pre></td></tr></table></figure></p>
 <h3 id="response-lastModified"><a href="#response-lastModified" class="headerlink" title="response.lastModified="></a>response.lastModified=</h3><figure class="highlight js"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">ctx.response.lastModified = <span class="keyword">new</span> <span class="built_in">Date</span>();</div></pre></td></tr></table></figure>
 <h3 id="response-etag"><a href="#response-etag" class="headerlink" title="response.etag="></a>response.etag=</h3><figure class="highlight js"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">ctx.response.etag = crypto.createHash(<span class="string">'md5'</span>).update(ctx.body).digest(<span class="string">'hex'</span>);</div></pre></td></tr></table></figure>
+<p>参考：<a href="http://koajs.com/" target="_blank" rel="external">http://koajs.com/</a></p>
 
       
     </div>
