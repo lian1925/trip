@@ -87,19 +87,16 @@
 
 
 
-<meta name="description" content="值、类型和变量计算机程序运行时，需要对值（value,比如：数字3.14或文本”hello world”）进行操作。在编程语言中，能表示并操作的值的类型称为数据类型。编程语言最基本的特性就是支持多种数据类型。当程序需要将值保存下来，以备将来使用时，便会将其保存（赋值）到一个变量（variable）。变量是一个值的符号名称，可以通过名称来获得对值的引用。
-原始类型和对象类型JavaScript分为两">
+<meta name="description" content="值、类型和变量计算机程序运行时，需要对值（value,比如：数字3.14或文本”hello world”）进行操作。在编程语言中，能表示并操作的值的类型称为数据类型。编程语言最基本的特性就是支持多种数据类型。">
 <meta property="og:type" content="article">
 <meta property="og:title" content="javascript权威指南">
 <meta property="og:url" content="http://tech.liangyl.com/2017/03/10/js-quanwei/index.html">
 <meta property="og:site_name" content="研发笔记">
-<meta property="og:description" content="值、类型和变量计算机程序运行时，需要对值（value,比如：数字3.14或文本”hello world”）进行操作。在编程语言中，能表示并操作的值的类型称为数据类型。编程语言最基本的特性就是支持多种数据类型。当程序需要将值保存下来，以备将来使用时，便会将其保存（赋值）到一个变量（variable）。变量是一个值的符号名称，可以通过名称来获得对值的引用。
-原始类型和对象类型JavaScript分为两">
-<meta property="og:updated_time" content="2017-03-10T10:57:08.000Z">
+<meta property="og:description" content="值、类型和变量计算机程序运行时，需要对值（value,比如：数字3.14或文本”hello world”）进行操作。在编程语言中，能表示并操作的值的类型称为数据类型。编程语言最基本的特性就是支持多种数据类型。">
+<meta property="og:updated_time" content="2017-03-10T15:10:11.000Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="javascript权威指南">
-<meta name="twitter:description" content="值、类型和变量计算机程序运行时，需要对值（value,比如：数字3.14或文本”hello world”）进行操作。在编程语言中，能表示并操作的值的类型称为数据类型。编程语言最基本的特性就是支持多种数据类型。当程序需要将值保存下来，以备将来使用时，便会将其保存（赋值）到一个变量（variable）。变量是一个值的符号名称，可以通过名称来获得对值的引用。
-原始类型和对象类型JavaScript分为两">
+<meta name="twitter:description" content="值、类型和变量计算机程序运行时，需要对值（value,比如：数字3.14或文本”hello world”）进行操作。在编程语言中，能表示并操作的值的类型称为数据类型。编程语言最基本的特性就是支持多种数据类型。">
 
 
 
@@ -324,7 +321,7 @@
       
 
       
-        <h2 id="值、类型和变量"><a href="#值、类型和变量" class="headerlink" title="值、类型和变量"></a>值、类型和变量</h2><p>计算机程序运行时，需要对值（value,比如：数字3.14或文本”hello world”）进行操作。<br>在编程语言中，能表示并操作的值的类型称为数据类型。编程语言最基本的特性就是支持多种数据类型。<br>当程序需要将值保存下来，以备将来使用时，便会将其保存（赋值）到一个变量（variable）。变量是一个值的符号名称，可以通过名称来获得对值的引用。</p>
+        <h2 id="值、类型和变量"><a href="#值、类型和变量" class="headerlink" title="值、类型和变量"></a>值、类型和变量</h2><p>计算机程序运行时，需要对值（value,比如：数字3.14或文本”hello world”）进行操作。<br>在编程语言中，能表示并操作的值的类型称为数据类型。编程语言最基本的特性就是支持多种数据类型。<br><a id="more"></a><br>当程序需要将值保存下来，以备将来使用时，便会将其保存（赋值）到一个变量（variable）。变量是一个值的符号名称，可以通过名称来获得对值的引用。</p>
 <h3 id="原始类型和对象类型"><a href="#原始类型和对象类型" class="headerlink" title="原始类型和对象类型"></a>原始类型和对象类型</h3><p>JavaScript分为两类数据类型：原始类型（primitive type）和对象类型（object type）。<br>原始数据类型包括5类：数字、字符串、布尔值、null和undefined<br>对象数据类型，由属性的集合组成，每个属性由“名/值对”表示。<br><strong>面向对象</strong><br>JavaScript是面向对象的语言，意味着我们不需要用全局的定义函数去操作不同类型的值，数据类型本身可以定义方法(method)来使用值。<br>示例：<br>对数组a的元素进行排序，不必将a传入sort()函数，而是调用a的一个方法sort()<br><figure class="highlight js"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div></pre></td><td class="code"><pre><div class="line"><span class="keyword">var</span> a = [<span class="number">1</span>,<span class="number">3</span>,<span class="number">2</span>]</div><div class="line">a.sort()</div><div class="line"><span class="comment">// [1,2,3]</span></div></pre></td></tr></table></figure></p>
 <h2 id="数字"><a href="#数字" class="headerlink" title="数字"></a>数字</h2><p>JavaScript不区分整数值和浮点数值，所有数字均使用浮点数值表示。<br>当一个数值直接出现在JavaScript程序中时，我们称之为数字直接量（numeric literal）。<br>整数示例。。。<br>浮点数示例。。。</p>
 <h3 id="算术运算"><a href="#算术运算" class="headerlink" title="算术运算"></a>算术运算</h3><p>语言本身提供了5类基本运算：<br>加法+<br>减法-<br>乘法*<br>除法/<br>求余 %<br>Math对象提供的运算<br><figure class="highlight js"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div><div class="line">14</div><div class="line">15</div><div class="line">16</div></pre></td><td class="code"><pre><div class="line"><span class="comment">// 2 的53 次方</span></div><div class="line"><span class="built_in">Math</span>.pow(<span class="number">2</span>,<span class="number">53</span>)</div><div class="line"><span class="comment">// 0.6的四舍五入</span></div><div class="line"><span class="built_in">Math</span>.round(<span class="number">.6</span>)</div><div class="line"><span class="comment">// 向上求整 -&gt; 1.0</span></div><div class="line"><span class="built_in">Math</span>.ceil(<span class="number">.6</span>)</div><div class="line"><span class="comment">// 向下求整 -&gt; 0.0</span></div><div class="line"><span class="built_in">Math</span>.floor(<span class="number">.6</span>)</div><div class="line"><span class="comment">// -5的绝对值 -&gt; 5</span></div><div class="line"><span class="built_in">Math</span>.abs(<span class="number">-5</span>)</div><div class="line"><span class="comment">// 返回最大值</span></div><div class="line"><span class="built_in">Math</span>.max(x,y,z)</div><div class="line"><span class="comment">// 返回最小值</span></div><div class="line"><span class="built_in">Math</span>.min(x,y,z)</div><div class="line"><span class="comment">// 生成一个大于0小于1的伪随机数</span></div><div class="line"><span class="built_in">Math</span>.random();</div></pre></td></tr></table></figure></p>
