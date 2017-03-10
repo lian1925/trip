@@ -5,7 +5,7 @@
   
 
 
-<html class="theme-next muse use-motion" lang="zh-Hans">
+<html class="theme-next pisces use-motion" lang="zh-Hans">
 <head>
   <meta charset="UTF-8"/>
 <meta http-equiv="X-UA-Compatible" content="IE=edge" />
@@ -103,7 +103,7 @@
   var NexT = window.NexT || {};
   var CONFIG = {
     root: '/',
-    scheme: 'Muse',
+    scheme: 'Pisces',
     sidebar: {"position":"left","display":"post","offset":12,"offset_float":0,"b2t":false,"scrollpercent":false},
     fancybox: true,
     motion: true,
@@ -240,6 +240,128 @@
           <div id="content" class="content">
             
   <section id="posts" class="posts-expand">
+    
+      
+
+  
+
+  
+  
+  
+
+  <article class="post post-type-normal " itemscope itemtype="http://schema.org/Article">
+    <link itemprop="mainEntityOfPage" href="http://tech.liangyl.com/2017/03/11/write-markdown/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="name" content="Lian">
+      <meta itemprop="description" content="">
+      <meta itemprop="image" content="/images/avatar.gif">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="研发笔记">
+    </span>
+
+    
+      <header class="post-header">
+
+        
+        
+          <h1 class="post-title" itemprop="name headline">
+            
+            
+              
+                
+                <a class="post-title-link" href="/2017/03/11/write-markdown/" itemprop="url">
+                  Markdown 语法
+                </a>
+              
+            
+          </h1>
+        
+
+        <div class="post-meta">
+          <span class="post-time">
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">发表于</span>
+              
+              <time title="创建于" itemprop="dateCreated datePublished" datetime="2017-03-11T00:32:09+08:00">
+                2017-03-11
+              </time>
+            
+
+            
+
+            
+          </span>
+
+          
+
+          
+            
+          
+
+          
+          
+
+          
+
+          
+
+          
+
+        </div>
+      </header>
+    
+
+
+    <div class="post-body" itemprop="articleBody">
+
+      
+      
+
+      
+        
+          <p>Markdown的目标是实现易读易写<br>可读性要好。一份使用 Markdown 格式撰写的文件应该是简洁干净的，可以直接以纯文本发布。起码，它看起来不会像是由许多标签或是格式指令所构成，那样会降低可读性。<br>Markdown 的语法全由一些符号所组成，这些符号经过精挑细选，其作用一目了然。<br>
+          <!--noindex-->
+          <div class="post-button text-center">
+            <a class="btn" href="/2017/03/11/write-markdown/#more" rel="contents">
+              阅读全文 &raquo;
+            </a>
+          </div>
+          <!--/noindex-->
+        
+      
+    </div>
+
+    <div>
+      
+    </div>
+
+    <div>
+      
+    </div>
+
+
+    <footer class="post-footer">
+      
+
+      
+
+      
+
+      
+      
+        <div class="post-eof"></div>
+      
+    </footer>
+  </article>
+
+
     
       
 
@@ -449,7 +571,28 @@
       
         
           
-            
+            <h2 id="安装"><a href="#安装" class="headerlink" title="安装"></a>安装</h2><p>在终端窗口下，定位到 Hexo 站点目录下。使用 Git checkout 代码：<br><figure class="highlight js"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div></pre></td><td class="code"><pre><div class="line">$ cd your-hexo-site</div><div class="line">$ git clone https:<span class="comment">//github.com/iissnan/hexo-theme-next themes/next</span></div></pre></td></tr></table></figure></p>
+<h2 id="启用主题"><a href="#启用主题" class="headerlink" title="启用主题"></a>启用主题</h2><p>修改 站点配置文件， 找到 theme 字段，并将其值更改为 next。<br><figure class="highlight js"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">theme: next</div></pre></td></tr></table></figure></p>
+<h2 id="选择-Scheme"><a href="#选择-Scheme" class="headerlink" title="选择 Scheme"></a>选择 Scheme</h2><figure class="highlight"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div></pre></td><td class="code"><pre><div class="line">#scheme: Muse</div><div class="line">#scheme: Mist</div><div class="line">scheme: Pisces</div></pre></td></tr></table></figure>
+<h2 id="设置-语言"><a href="#设置-语言" class="headerlink" title="设置 语言"></a>设置 语言</h2><p>修改 站点配置文件<br><figure class="highlight js"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">language: zh-Hans</div></pre></td></tr></table></figure></p>
+<h2 id="设置菜单"><a href="#设置菜单" class="headerlink" title="设置菜单"></a>设置菜单</h2><h3 id="在站点配置文件中，设置菜单名称和链接"><a href="#在站点配置文件中，设置菜单名称和链接" class="headerlink" title="在站点配置文件中，设置菜单名称和链接"></a>在站点配置文件中，设置菜单名称和链接</h3><figure class="highlight"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div></pre></td><td class="code"><pre><div class="line">menu:</div><div class="line">  home: /</div><div class="line">  archives: /archives</div><div class="line">  #about: /about</div><div class="line">  #categories: /categories</div><div class="line">  tags: /tags</div><div class="line">  #commonweal: /404.html</div></pre></td></tr></table></figure>
+<h3 id="设置菜单项的显示文本。"><a href="#设置菜单项的显示文本。" class="headerlink" title="设置菜单项的显示文本。"></a>设置菜单项的显示文本。</h3><p>以简体中文为例，若你需要添加一个菜单项，比如 something。那么就需要修改简体中文对应的翻译文件 languages/zh-Hans.yml，在 menu 字段下添加一项：<br><figure class="highlight js"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div></pre></td><td class="code"><pre><div class="line">menu:</div><div class="line">  home: 首页</div><div class="line">  archives: 归档</div><div class="line">  categories: 分类</div><div class="line">  tags: 标签</div><div class="line">  about: 关于</div><div class="line">  search: 搜索</div><div class="line">  commonweal: 公益<span class="number">404</span></div><div class="line">  something: 有料</div></pre></td></tr></table></figure></p>
+<h3 id="设定菜单项的图标"><a href="#设定菜单项的图标" class="headerlink" title="设定菜单项的图标"></a>设定菜单项的图标</h3><p>对应的字段是 menu_icons。 此设定格式是 item name: icon name，其中 item name 与上一步所配置的菜单名字对应，icon name 是 Font Awesome 图标的 名字。而 enable 可用于控制是否显示图标，你可以设置成 false 来去掉图标。<br><figure class="highlight"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div></pre></td><td class="code"><pre><div class="line">menu_icons:</div><div class="line">  enable: true</div><div class="line">  # Icon Mapping.</div><div class="line">  home: home</div><div class="line">  about: user</div><div class="line">  categories: th</div><div class="line">  tags: tags</div><div class="line">  archives: archive</div><div class="line">  commonweal: heartbeat</div></pre></td></tr></table></figure></p>
+<h3 id="设置-侧栏"><a href="#设置-侧栏" class="headerlink" title="设置 侧栏"></a>设置 侧栏</h3><p>设置侧栏的位置，修改 sidebar.position 的值，支持的选项有：</p>
+<p>left - 靠左放置<br>right - 靠右放置<br>设置侧栏显示的时机，修改 sidebar.display 的值，支持的选项有：</p>
+<p>post - 默认行为，在文章页面（拥有目录列表）时显示<br>always - 在所有页面中都显示<br>hide - 在所有页面中都隐藏（可以手动展开）<br>remove - 完全移除</p>
+<h3 id="设置-头像"><a href="#设置-头像" class="headerlink" title="设置 头像"></a>设置 头像</h3><p>编辑 站点配置文件， 新增字段 avatar， 值设置成头像的链接地址。其中，头像的链接地址可以是：</p>
+<p>地址    值<br>完整的互联网 URI    <a href="http://example.com/avatar.png" target="_blank" rel="external">http://example.com/avatar.png</a><br>站点内的地址<br>将头像放置主题目录下的 source/uploads/ （新建uploads目录若不存在）<br>配置为：avatar: /uploads/avatar.png</p>
+<p>或者 放置在 source/images/ 目录下<br>配置为：avatar: /images/avatar.png</p>
+<h3 id="多说评论"><a href="#多说评论" class="headerlink" title="多说评论"></a>多说评论</h3><p>使用多说前，你需要在多说创建一个站点</p>
+<ul>
+<li>登录后，在首页选择 “我要安装”</li>
+<li>创建站点，填写站点相关信息（重要：多说域名 这一栏填写的即是你的 duoshuo_shortname）<br>创建站点完成后在 主题配置文件 中新增 duoshuo_shortname 字段<figure class="highlight js"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">duoshuo_shortname: iissnan-notes</div></pre></td></tr></table></figure>
+</li>
+</ul>
+<p>请注意为了确保多说索引的页面地址正确，需要在 站点配置文件 中正确设置 url 为你站点的域名。</p>
+<h3 id="百度统计"><a href="#百度统计" class="headerlink" title="百度统计"></a>百度统计</h3><p>登录百度统计，定位到站点的代码获取页面<br>复制 hm.js? 后面那串统计脚本 id<br>编辑 站点配置文件， 新增字段 baidu_analytics 字段，值设置成你的百度统计脚本 id</p>
+
           
         
       
@@ -891,7 +1034,7 @@
           
             <div class="site-state-item site-state-posts">
               <a href="/archives">
-                <span class="site-state-item-count">5</span>
+                <span class="site-state-item-count">6</span>
                 <span class="site-state-item-name">日志</span>
               </a>
             </div>
@@ -961,7 +1104,7 @@
 <div class="theme-info">
   主题 -
   <a class="theme-link" href="https://github.com/iissnan/hexo-theme-next">
-    NexT.Muse
+    NexT.Pisces
   </a>
 </div>
 
@@ -1032,6 +1175,13 @@
 
   
   
+
+
+  <script type="text/javascript" src="/js/src/affix.js?v=5.1.0"></script>
+
+  <script type="text/javascript" src="/js/src/schemes/pisces.js?v=5.1.0"></script>
+
+
 
   
 
