@@ -1,0 +1,664 @@
+<!doctype html>
+
+
+
+  
+
+
+<html class="theme-next pisces use-motion" lang="zh-Hans">
+<head>
+  <meta charset="UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1"/>
+
+
+
+<meta http-equiv="Cache-Control" content="no-transform" />
+<meta http-equiv="Cache-Control" content="no-siteapp" />
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+  
+  <link href="/lib/fancybox/source/jquery.fancybox.css?v=2.1.5" rel="stylesheet" type="text/css" />
+
+
+
+
+  
+  
+  
+  
+
+  
+    
+    
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+    
+    
+    <link href="//fonts.googleapis.com/css?family=Lato:300,300italic,400,400italic,700,700italic&subset=latin,latin-ext" rel="stylesheet" type="text/css">
+  
+
+
+
+
+
+
+<link href="/lib/font-awesome/css/font-awesome.min.css?v=4.6.2" rel="stylesheet" type="text/css" />
+
+<link href="/css/main.css?v=5.1.0" rel="stylesheet" type="text/css" />
+
+
+  <meta name="keywords" content="Hexo, NexT" />
+
+
+
+
+
+
+
+
+  <link rel="shortcut icon" type="image/x-icon" href="/favicon.ico?v=5.1.0" />
+
+
+
+
+
+
+<meta name="description" content="让我们想象一下，我们在远离故乡的大城市，租了一间小房子。这间房子的上个主人刚搬走，整个房间空荡荡，地板的印痕，似乎在提示之前这里摆放了一些大型的重量级家具。墙角堆满了碎纸片和脏衣服，混杂着一些水渍，散发着异味。走近点，还能看到蟑螂、蜘蛛在上面来回走动。墙壁上还能看到胡乱涂抹的笔划及刮痕，还有胶纸未撕干净留下的痕迹，用手一碰，还能感受到厚厚的灰尘。走进厨房，靠近灶台的窗户满满的都是油烟，黏糊糊的，黑">
+<meta property="og:type" content="article">
+<meta property="og:title" content="家居设计">
+<meta property="og:url" content="http://tech.liangyl.com/2017/03/19/home-design/index.html">
+<meta property="og:site_name" content="研发笔记">
+<meta property="og:description" content="让我们想象一下，我们在远离故乡的大城市，租了一间小房子。这间房子的上个主人刚搬走，整个房间空荡荡，地板的印痕，似乎在提示之前这里摆放了一些大型的重量级家具。墙角堆满了碎纸片和脏衣服，混杂着一些水渍，散发着异味。走近点，还能看到蟑螂、蜘蛛在上面来回走动。墙壁上还能看到胡乱涂抹的笔划及刮痕，还有胶纸未撕干净留下的痕迹，用手一碰，还能感受到厚厚的灰尘。走进厨房，靠近灶台的窗户满满的都是油烟，黏糊糊的，黑">
+<meta property="og:updated_time" content="2017-03-27T12:47:47.000Z">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="家居设计">
+<meta name="twitter:description" content="让我们想象一下，我们在远离故乡的大城市，租了一间小房子。这间房子的上个主人刚搬走，整个房间空荡荡，地板的印痕，似乎在提示之前这里摆放了一些大型的重量级家具。墙角堆满了碎纸片和脏衣服，混杂着一些水渍，散发着异味。走近点，还能看到蟑螂、蜘蛛在上面来回走动。墙壁上还能看到胡乱涂抹的笔划及刮痕，还有胶纸未撕干净留下的痕迹，用手一碰，还能感受到厚厚的灰尘。走进厨房，靠近灶台的窗户满满的都是油烟，黏糊糊的，黑">
+
+
+
+<script type="text/javascript" id="hexo.configurations">
+  var NexT = window.NexT || {};
+  var CONFIG = {
+    root: '/',
+    scheme: 'Pisces',
+    sidebar: {"position":"left","display":"post","offset":12,"offset_float":0,"b2t":false,"scrollpercent":false},
+    fancybox: true,
+    motion: true,
+    duoshuo: {
+      userId: '0',
+      author: '博主'
+    },
+    algolia: {
+      applicationID: '',
+      apiKey: '',
+      indexName: '',
+      hits: {"per_page":10},
+      labels: {"input_placeholder":"Search for Posts","hits_empty":"We didn't find any results for the search: ${query}","hits_stats":"${hits} results found in ${time} ms"}
+    }
+  };
+</script>
+
+
+
+  <link rel="canonical" href="http://tech.liangyl.com/2017/03/19/home-design/"/>
+
+
+
+
+
+  <title> 家居设计 | 研发笔记 </title>
+</head>
+
+<body itemscope itemtype="http://schema.org/WebPage" lang="zh-Hans">
+
+  
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+  
+    
+  
+
+  <div class="container one-collumn sidebar-position-left page-post-detail ">
+    <div class="headband"></div>
+
+    <header id="header" class="header" itemscope itemtype="http://schema.org/WPHeader">
+      <div class="header-inner"><div class="site-brand-wrapper">
+  <div class="site-meta ">
+    
+
+    <div class="custom-logo-site-title">
+      <a href="/"  class="brand" rel="start">
+        <span class="logo-line-before"><i></i></span>
+        <span class="site-title">研发笔记</span>
+        <span class="logo-line-after"><i></i></span>
+      </a>
+    </div>
+      
+        <p class="site-subtitle">电子商务互联网平台（跨海关）的技术实践</p>
+      
+  </div>
+
+  <div class="site-nav-toggle">
+    <button>
+      <span class="btn-bar"></span>
+      <span class="btn-bar"></span>
+      <span class="btn-bar"></span>
+    </button>
+  </div>
+</div>
+
+<nav class="site-nav">
+  
+
+  
+    <ul id="menu" class="menu">
+      
+        
+        <li class="menu-item menu-item-home">
+          <a href="/" rel="section">
+            
+              <i class="menu-item-icon fa fa-fw fa-home"></i> <br />
+            
+            首页
+          </a>
+        </li>
+      
+        
+        <li class="menu-item menu-item-archives">
+          <a href="/archives" rel="section">
+            
+              <i class="menu-item-icon fa fa-fw fa-archive"></i> <br />
+            
+            归档
+          </a>
+        </li>
+      
+        
+        <li class="menu-item menu-item-tags">
+          <a href="/tags" rel="section">
+            
+              <i class="menu-item-icon fa fa-fw fa-tags"></i> <br />
+            
+            标签
+          </a>
+        </li>
+      
+
+      
+    </ul>
+  
+
+  
+</nav>
+
+
+
+ </div>
+    </header>
+
+    <main id="main" class="main">
+      <div class="main-inner">
+        <div class="content-wrap">
+          <div id="content" class="content">
+            
+
+  <div id="posts" class="posts-expand">
+    
+
+  
+
+  
+  
+  
+
+  <article class="post post-type-normal " itemscope itemtype="http://schema.org/Article">
+    <link itemprop="mainEntityOfPage" href="http://tech.liangyl.com/2017/03/19/home-design/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="name" content="Lian">
+      <meta itemprop="description" content="">
+      <meta itemprop="image" content="/images/avatar.gif">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="研发笔记">
+    </span>
+
+    
+      <header class="post-header">
+
+        
+        
+          <h1 class="post-title" itemprop="name headline">
+            
+            
+              
+                家居设计
+              
+            
+          </h1>
+        
+
+        <div class="post-meta">
+          <span class="post-time">
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">发表于</span>
+              
+              <time title="创建于" itemprop="dateCreated datePublished" datetime="2017-03-19T13:54:53+08:00">
+                2017-03-19
+              </time>
+            
+
+            
+
+            
+          </span>
+
+          
+
+          
+            
+          
+
+          
+          
+
+          
+
+          
+
+          
+
+        </div>
+      </header>
+    
+
+
+    <div class="post-body" itemprop="articleBody">
+
+      
+      
+
+      
+        <p>让我们想象一下，我们在远离故乡的大城市，租了一间小房子。这间房子的上个主人刚搬走，整个房间空荡荡，地板的印痕，似乎在提示之前这里摆放了一些大型的重量级家具。墙角堆满了碎纸片和脏衣服，混杂着一些水渍，散发着异味。走近点，还能看到蟑螂、蜘蛛在上面来回走动。墙壁上还能看到胡乱涂抹的笔划及刮痕，还有胶纸未撕干净留下的痕迹，用手一碰，还能感受到厚厚的灰尘。<br>走进厨房，靠近灶台的窗户满满的都是油烟，黏糊糊的，黑乎乎的一片片。有些地方还能看到一圈一圈的发霉菌落。<br><a id="more"></a></p>
+<h2 id="Come-on-让我们正式开始装扮我们的房间。"><a href="#Come-on-让我们正式开始装扮我们的房间。" class="headerlink" title="Come on. 让我们正式开始装扮我们的房间。"></a>Come on. 让我们正式开始装扮我们的房间。</h2><p>第一步，将无用的家具扔掉，将垃圾清扫干净。<br>第二步，拖地板，擦拭墙壁和窗户。因为旧房子可能衍生肠道致病菌，化脓性球菌等，故建议采用消毒液来完成清洗。家庭消毒可以采用84消毒液。<br>第三步，清洁完成，可以在房间角落放置一些生石灰，保持房间干燥。<br>第四步，对墙壁和旧的家具，进行刷漆。<br>第五步，在房间内，铺设地板贴。<br>第六步，卧室和客厅的墙壁，贴上好看的墙纸。<br>第七步，安装好看的窗帘。<br>第八步，卫浴间一般会比较潮湿，故建议在其门口摆放一块吸水地毯。这样可以防止将卫浴间的水弄到其他房间。<br>第九步，安装落地灯，提升房间的气氛。<br>第十步，合理摆放常用家具，如：床，衣柜，书桌，冰箱，风扇<br>第十一步，往房间的空气喷些消毒液，晾一两天。然后摆放一些空气清新剂。</p>
+<p>物品清单<br>84消毒液 <a href="https://chaoshi.detail.tmall.com/item.htm?spm=a230r.1.14.9.HS4mmM&amp;id=17904564640&amp;cm_id=140105335569ed55e27b&amp;abbucket=2" target="_blank" rel="external">https://chaoshi.detail.tmall.com/item.htm?spm=a230r.1.14.9.HS4mmM&amp;id=17904564640&amp;cm_id=140105335569ed55e27b&amp;abbucket=2</a><br>生石灰<br><a href="https://item.taobao.com/item.htm?spm=a230r.1.14.59.H6ehE0&amp;id=531655542167&amp;ns=1&amp;abbucket=2#detail" target="_blank" rel="external">https://item.taobao.com/item.htm?spm=a230r.1.14.59.H6ehE0&amp;id=531655542167&amp;ns=1&amp;abbucket=2#detail</a><br>面漆<br><a href="https://item.taobao.com/item.htm?spm=a230r.1.14.23.LP54RV&amp;id=540680533675&amp;ns=1&amp;abbucket=2#detail" target="_blank" rel="external">https://item.taobao.com/item.htm?spm=a230r.1.14.23.LP54RV&amp;id=540680533675&amp;ns=1&amp;abbucket=2#detail</a><br>墙纸<br><a href="https://detail.tmall.com/item.htm?spm=a230r.1.14.1.0OVHJl&amp;id=541591739086&amp;ns=1&amp;abbucket=2&amp;sku_properties=164656271:1347703343" target="_blank" rel="external">https://detail.tmall.com/item.htm?spm=a230r.1.14.1.0OVHJl&amp;id=541591739086&amp;ns=1&amp;abbucket=2&amp;sku_properties=164656271:1347703343</a><br>地板贴<br><a href="https://detail.tmall.com/item.htm?id=16563394925&amp;ali_refid=a3_430583_1006:1106374442:N:%E5%A2%99%E7%BA%B8:079f8b188e6671e04b29402da1ee6109&amp;ali_trackid=1_079f8b188e6671e04b29402da1ee6109&amp;spm=a230r.1.14.1.0OVHJl&amp;skuId=3460088250960" target="_blank" rel="external">https://detail.tmall.com/item.htm?id=16563394925&amp;ali_refid=a3_430583_1006:1106374442:N:%E5%A2%99%E7%BA%B8:079f8b188e6671e04b29402da1ee6109&amp;ali_trackid=1_079f8b188e6671e04b29402da1ee6109&amp;spm=a230r.1.14.1.0OVHJl&amp;skuId=3460088250960</a><br>地毯： <a href="https://detail.tmall.com/item.htm?spm=a230r.1.14.44.iXRgRl&amp;id=521322077617&amp;ns=1&amp;abbucket=2" target="_blank" rel="external">https://detail.tmall.com/item.htm?spm=a230r.1.14.44.iXRgRl&amp;id=521322077617&amp;ns=1&amp;abbucket=2</a><br>窗帘：<br><a href="https://detail.tmall.com/item.htm?spm=a220m.1000858.1000725.36.nHErIu&amp;id=44593945591&amp;skuId=3260674725593&amp;areaId=440300&amp;user_id=832355217&amp;cat_id=2&amp;is_b=1&amp;rn=6d8ddfd0c1938bd424b4f0d401645988" target="_blank" rel="external">https://detail.tmall.com/item.htm?spm=a220m.1000858.1000725.36.nHErIu&amp;id=44593945591&amp;skuId=3260674725593&amp;areaId=440300&amp;user_id=832355217&amp;cat_id=2&amp;is_b=1&amp;rn=6d8ddfd0c1938bd424b4f0d401645988</a></p>
+<p>落地灯<br><a href="https://item.taobao.com/item.htm?spm=a230r.1.14.4.59gk23&amp;id=521492119892&amp;ns=1&amp;abbucket=2#detail" target="_blank" rel="external">https://item.taobao.com/item.htm?spm=a230r.1.14.4.59gk23&amp;id=521492119892&amp;ns=1&amp;abbucket=2#detail</a></p>
+<p>衣柜<br><a href="https://detail.tmall.com/item.htm?id=530895058641&amp;ali_refid=a3_430583_1006:1103600343:N:%E8%A1%A3%E6%9F%9C:e5f720ca4624c459160588479274c592&amp;ali_trackid=1_e5f720ca4624c459160588479274c592&amp;spm=a230r.1.14.1.JREolp" target="_blank" rel="external">https://detail.tmall.com/item.htm?id=530895058641&amp;ali_refid=a3_430583_1006:1103600343:N:%E8%A1%A3%E6%9F%9C:e5f720ca4624c459160588479274c592&amp;ali_trackid=1_e5f720ca4624c459160588479274c592&amp;spm=a230r.1.14.1.JREolp</a><br>空气消毒液 <a href="https://item.taobao.com/item.htm?spm=a230r.1.14.62.H6ehE0&amp;id=527164030601&amp;ns=1&amp;abbucket=2#detail" target="_blank" rel="external">https://item.taobao.com/item.htm?spm=a230r.1.14.62.H6ehE0&amp;id=527164030601&amp;ns=1&amp;abbucket=2#detail</a><br>清新剂<br><a href="https://chaoshi.detail.tmall.com/item.htm?spm=a230r.1.14.4.RX1LTz&amp;id=16457859762&amp;ns=1&amp;abbucket=2" target="_blank" rel="external">https://chaoshi.detail.tmall.com/item.htm?spm=a230r.1.14.4.RX1LTz&amp;id=16457859762&amp;ns=1&amp;abbucket=2</a></p>
+<p>参考<br><a href="https://www.zhihu.com/question/29840789" target="_blank" rel="external">https://www.zhihu.com/question/29840789</a><br><a href="https://www.zhihu.com/question/31696983" target="_blank" rel="external">https://www.zhihu.com/question/31696983</a></p>
+
+      
+    </div>
+
+    <div>
+      
+        
+
+      
+    </div>
+
+    <div>
+      
+        
+
+      
+    </div>
+
+
+    <footer class="post-footer">
+      
+
+      
+        
+      
+
+      
+        <div class="post-nav">
+          <div class="post-nav-next post-nav-item">
+            
+              <a href="/2017/03/11/write-markdown/" rel="next" title="Markdown 语法">
+                <i class="fa fa-chevron-left"></i> Markdown 语法
+              </a>
+            
+          </div>
+
+          <span class="post-nav-divider"></span>
+
+          <div class="post-nav-prev post-nav-item">
+            
+          </div>
+        </div>
+      
+
+      
+      
+    </footer>
+  </article>
+
+
+
+    <div class="post-spread">
+      
+    </div>
+  </div>
+
+          
+          </div>
+          
+
+
+          
+  <div class="comments" id="comments">
+    
+  </div>
+
+
+        </div>
+        
+          
+  
+  <div class="sidebar-toggle">
+    <div class="sidebar-toggle-line-wrap">
+      <span class="sidebar-toggle-line sidebar-toggle-line-first"></span>
+      <span class="sidebar-toggle-line sidebar-toggle-line-middle"></span>
+      <span class="sidebar-toggle-line sidebar-toggle-line-last"></span>
+    </div>
+  </div>
+
+  <aside id="sidebar" class="sidebar">
+    <div class="sidebar-inner">
+
+      
+
+      
+        <ul class="sidebar-nav motion-element">
+          <li class="sidebar-nav-toc sidebar-nav-active" data-target="post-toc-wrap" >
+            文章目录
+          </li>
+          <li class="sidebar-nav-overview" data-target="site-overview">
+            站点概览
+          </li>
+        </ul>
+      
+
+      <section class="site-overview sidebar-panel">
+        <div class="site-author motion-element" itemprop="author" itemscope itemtype="http://schema.org/Person">
+          <img class="site-author-image" itemprop="image"
+               src="/images/avatar.gif"
+               alt="Lian" />
+          <p class="site-author-name" itemprop="name">Lian</p>
+           
+              <p class="site-description motion-element" itemprop="description">全栈、react、nodejs、spring-boot</p>
+          
+        </div>
+        <nav class="site-state motion-element">
+
+          
+            <div class="site-state-item site-state-posts">
+              <a href="/archives">
+                <span class="site-state-item-count">7</span>
+                <span class="site-state-item-name">日志</span>
+              </a>
+            </div>
+          
+
+          
+
+          
+            
+            
+            <div class="site-state-item site-state-tags">
+              
+                <span class="site-state-item-count">5</span>
+                <span class="site-state-item-name">标签</span>
+              
+            </div>
+          
+
+        </nav>
+
+        
+
+        <div class="links-of-author motion-element">
+          
+        </div>
+
+        
+        
+
+        
+        
+
+        
+
+
+      </section>
+
+      
+      <!--noindex-->
+        <section class="post-toc-wrap motion-element sidebar-panel sidebar-panel-active">
+          <div class="post-toc">
+
+            
+              
+            
+
+            
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#Come-on-让我们正式开始装扮我们的房间。"><span class="nav-number">1.</span> <span class="nav-text">Come on. 让我们正式开始装扮我们的房间。</span></a></li></ol></div>
+            
+
+          </div>
+        </section>
+      <!--/noindex-->
+      
+
+      
+
+    </div>
+  </aside>
+
+
+        
+      </div>
+    </main>
+
+    <footer id="footer" class="footer">
+      <div class="footer-inner">
+        <div class="copyright" >
+  
+  &copy; 
+  <span itemprop="copyrightYear">2017</span>
+  <span class="with-love">
+    <i class="fa fa-heart"></i>
+  </span>
+  <span class="author" itemprop="copyrightHolder">Lian</span>
+</div>
+
+
+<div class="powered-by">
+  由 <a class="theme-link" href="https://hexo.io">Hexo</a> 强力驱动
+</div>
+
+<div class="theme-info">
+  主题 -
+  <a class="theme-link" href="https://github.com/iissnan/hexo-theme-next">
+    NexT.Pisces
+  </a>
+</div>
+
+
+        
+
+        
+      </div>
+    </footer>
+
+    
+      <div class="back-to-top">
+        <i class="fa fa-arrow-up"></i>
+        
+      </div>
+    
+    
+  </div>
+
+  
+
+<script type="text/javascript">
+  if (Object.prototype.toString.call(window.Promise) !== '[object Function]') {
+    window.Promise = null;
+  }
+</script>
+
+
+
+
+
+
+
+
+
+  
+
+
+
+
+  
+  <script type="text/javascript" src="/lib/jquery/index.js?v=2.1.3"></script>
+
+  
+  <script type="text/javascript" src="/lib/fastclick/lib/fastclick.min.js?v=1.0.6"></script>
+
+  
+  <script type="text/javascript" src="/lib/jquery_lazyload/jquery.lazyload.js?v=1.9.7"></script>
+
+  
+  <script type="text/javascript" src="/lib/velocity/velocity.min.js?v=1.2.1"></script>
+
+  
+  <script type="text/javascript" src="/lib/velocity/velocity.ui.min.js?v=1.2.1"></script>
+
+  
+  <script type="text/javascript" src="/lib/fancybox/source/jquery.fancybox.pack.js?v=2.1.5"></script>
+
+
+  
+
+
+  <script type="text/javascript" src="/js/src/utils.js?v=5.1.0"></script>
+
+  <script type="text/javascript" src="/js/src/motion.js?v=5.1.0"></script>
+
+
+
+  
+  
+
+
+  <script type="text/javascript" src="/js/src/affix.js?v=5.1.0"></script>
+
+  <script type="text/javascript" src="/js/src/schemes/pisces.js?v=5.1.0"></script>
+
+
+
+  
+  <script type="text/javascript" src="/js/src/scrollspy.js?v=5.1.0"></script>
+<script type="text/javascript" src="/js/src/post-details.js?v=5.1.0"></script>
+
+
+
+  
+
+
+  <script type="text/javascript" src="/js/src/bootstrap.js?v=5.1.0"></script>
+
+
+
+  
+
+
+
+  
+
+
+
+
+	
+
+
+
+
+
+  
+
+
+
+
+
+  
+
+
+
+
+
+  
+
+
+
+  
+  
+
+  
+
+  
+
+  
+
+  
+
+
+  
+
+</body>
+</html>
